@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dk.unf.software.aar2013.gruppe2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wacky"
+        android:label="Whack-A-Pirate"
+        android:theme="@style/AppTheme" >
+                <activity
+            android:name="dk.unf.software.aar2013.gruppe2.SecretActivity"
+            android:label="EasterEgg"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="dk.unf.software.aar2013.gruppe2.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="dk.unf.software.aar2013.gruppe2.IntroActivity"
+            android:label="Whack-A-Pirate"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dk.unf.software.aar2013.gruppe2.pirateFactsActivity"
+            android:label="PirateFacts"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="dk.unf.software.aar2013.gruppe2.HigscoreActivity"
+            android:label="Highscore"
+                        android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
